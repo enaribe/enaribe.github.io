@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -162,6 +162,288 @@
         </div>
     </footer>
 
+    
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafar AI</title>
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="">
+        <nav>
+            <a href="#">Contactez-nous</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScpZbSBaAPxKGqFwlagPjv-gCF7U4n70ikcq1QzfsSETggGyg/viewform?usp=header" class="download">Télécharger l'application</a>
+            <div class="light"><img src="images/light.svg" alt=""></div>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <div class="left">
+            <div class="sign">
+                <img src="images/flag.svg" alt="">
+                <span>EdTech Product</span>
+            </div>
+            <h1>L’apprentissage <br>plus simple, plus accessible,<br> plus personnalisé.</h1>
+            <p>Avec Nafar, l’IA transforme votre façon d’apprendre. </p>
+            <div class="buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOABtRTgfcsFyvADZoJXjOccatjPVzSStPSLLPyk8eL8la-Q/viewform?usp=header"><img src="images/store.svg" alt=""></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScpZbSBaAPxKGqFwlagPjv-gCF7U4n70ikcq1QzfsSETggGyg/viewform?usp=header"><img src="images/play.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/banner.svg" alt="">
+        </div>
+    </section>
+
+    <section class="appr reveal">
+        <h1>Nafar optimise l’apprentissage</h1>
+        <p>Votre parcours vers la réussite commence par trois choix simples.</p>
+        <div class="cards">
+            <div class="card">
+                <h2>Apprendre</h2>
+                <img src="images/appr1.svg" alt="">
+                <div class="appr-det">
+                    <p>Contenu interactif en quelques secondes
+                        Sessions adaptées pout different niveau (15, 30 minutes) 
+                        Format audio ou écrit selon vos préférences</p>
+                    <span>"Gagnez 2h de révision par jour"</span>
+                </div>
+            </div>
+            <div class="card">
+                <h2>S’exercer</h2>
+                <img src="images/appr2.svg" alt="">
+                <div class="appr-det">
+                    <p>Exercices générés selon votre niveau
+                        Progression adaptative
+                        Correction instantanée</p>
+                        <span>"Progressez à votre rythme optimal"</span>
+                </div>
+            </div>
+            <div class="card">
+                <h2>S’évaluer</h2>
+                <img src="images/appr3.svg" alt="">
+                <div class="appr-det">
+                    <p>Tests personnalisés
+                        Analyse détaillée des résultats
+                        Recommandations ciblées</p>
+                    <span>"Comprendre ses forces et faiblesses pour mieux progresser"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="options reveal">
+        <h1>Utiliser nafar c’est très simple</h1>
+        <div class="menu">
+            <div class="item active" data-target="apprendre-content">Apprendre</div>
+            <div class="item" data-target="exercice-content">Faire un exercice</div>
+            <div class="item" data-target="evaluation-content">Faire une évaluation</div>
+            <div class="item" data-target="digitaliser-content">Digitaliser des cours</div>
+        </div>
+        <div class="content">
+            <div id="apprendre-content" class="content-section" style="display: flex;">
+                <div class="line1">
+                    <div class="contenu">
+                        <img src="images/media.svg" alt="">
+                        <p>Prenez en photo ou importer vos cours et documents pour générer des révisions interactives</p>
+                    </div>
+                    <div class="contenu">
+                        <img src="images/audio.svg" alt="">
+                        <p>Choisissez entre des formats audio ou écrits pour maximiser votre compréhension.</p>
+                    </div>
+                </div>
+                <div class="line2">
+                    <img src="images/phone.svg" alt="">
+                </div>
+                <div class="line3">
+                    <div class="contenu">
+                        <img src="images/sett.svg" alt="">
+                        <p>Sélectionnez les durées (15 min, 45 min) et niveaux (Facile, Moyen, Difficile) qui vous conviennent.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="exercice-content" class="content-section" style="display: none;">
+                <div class="line1">
+                    <div class="contenu">
+                        <img src="images/exercice-icon.svg" alt="">
+                        <h3>Exercices personnalisés</h3>
+                        <p>Choisissez votre domaine et votre niveau de difficulté</p>
+                        <button>Commencer</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="evaluation-content" class="content-section" style="display: none;">
+                <div class="line1">
+                    <div class="contenu">
+                        <img src="images/test-icon.svg" alt="">
+                        <h3>Évaluation des compétences</h3>
+                        <p>Sélectionnez les matières à évaluer</p>
+                        <button>Démarrer le test</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="digitaliser-content" class="content-section" style="display: none;">
+                <div class="line1">
+                    <div class="contenu">
+                        <img src="images/scan-icon.svg" alt="">
+                        <h3>Numérisation de documents</h3>
+                        <p>Importez ou prenez une photo de vos documents</p>
+                        <input type="file" accept="image/*">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="appr vision reveal">
+        <h1>Notre vision pour l'éducation</h1>
+        <p>"Ensemble, construisons un futur où tout le monde peut apprendre."</p>
+        <div class="appr-contenu">
+            <div class="left">
+                <img src="images/vision.svg" alt="">
+            </div>
+            <div class="right">
+                <p>Chez NAFAR, nous croyons que l'éducation doit être accessible, engageante et adaptée à chacun. C'est pourquoi nous travaillons également avec les enseignants et les écoles pour définir la nouvelle façon d’apprendre.<br>
+                    <span>Vous êtes enseignant ou représentant d'une école ?</span>
+                </p>
+                <div class="go">
+                    <!-- <a href="https://cal.com/fr">Demander une démo</a> -->
+                    <a href="#" 
+                    data-cal-link="ramatoulaye-gaye-ifmsi2/15min" 
+                    data-cal-namespace="15min" 
+                    data-cal-config='{"layout":"month_view"}'>
+                    Demander une démo
+                 </a>
+                    <a href="#">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="telecharger reveal">
+        <h1>Télécharger Nafar</h1>
+        <p>Commencez à apprendre autrement</p>
+        <div class="buttons">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOABtRTgfcsFyvADZoJXjOccatjPVzSStPSLLPyk8eL8la-Q/viewform?usp=header"><img src="images/store.svg" alt=""></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScpZbSBaAPxKGqFwlagPjv-gCF7U4n70ikcq1QzfsSETggGyg/viewform?usp=header"><img src="images/play.svg" alt=""></a>
+        </div>
+    </section>
+
+    <section class="newsletter reveal">
+        <p>Rejoignez notre newsletter pour être informé des évolutions de Nafar</p>
+        <form action="">
+            <input type="text" placeholder="adresse email">
+            <button>S'inscrire</button>
+        </form>
+    </section>
+
+    <footer class="reveal">
+        <div class="left">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <p>Ensemble pour un futur où tout le monde peut apprendre</p>
+        </div>
+        <div class="right">
+            <div class="links">
+                <a href="">CGU</a>
+                <a href="">Politique de confidentialité</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="socials">
+                <a href=""><img src="images/insta.svg" alt=""></a>
+                <a href=""><img src="images/fb.svg" alt=""></a>
+                <a href=""><img src="images/link.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer pour les animations au scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const delay = entry.target.getAttribute('data-delay') || 0;
+                        setTimeout(() => {
+                            entry.target.classList.add('active');
+                        }, delay * 1000);
+                    } else {
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+            // Gestion du menu
+            const menuItems = document.querySelectorAll('.options .item');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+
+                    contentSections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    const target = this.dataset.target;
+                    if (target) {
+                        document.getElementById(target).style.display = 'flex';
+                    }
+                });
+            });
+        });
+    </script>
+     <script type="text/javascript">
+        (function (C, A, L) {
+          let p = function (a, ar) { a.q.push(ar); };
+          let d = C.document;
+          C.Cal = C.Cal || function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () { p(api, arguments); };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+        })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "15min", { origin: "https://cal.com" });
+    
+        // Configuration de l'interface utilisateur
+        Cal.ns["15min"]("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+      </script>
     
 </body>
 </html>
