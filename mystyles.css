@@ -235,7 +235,7 @@ section{
 
 .options .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 44px;
     margin-top: 90px;
 }
@@ -254,6 +254,7 @@ section{
     align-items: center;
     gap: 25px;
 }
+
 
 .options .content .contenu p{
     color: var(--Color2, #384D64);
@@ -430,14 +431,14 @@ footer .right .links a{
 /* Styles pour les nouvelles sections */
 .content-section {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     width: 100%;
 }
 
 #apprendre-content {
     display: flex; /* Affiche la section "Apprendre" par défaut */
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 
@@ -464,10 +465,17 @@ footer .right .links a{
 }
 
 /* Styles pour le contenu existant de "Apprendre" */
-.line1, .line3 {
+.line1 {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+.line3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* margin-top: 70px; */
 }
 
 .line2 img {
@@ -477,7 +485,39 @@ footer .right .links a{
     display: block;
 }
 
+#exercice-content {
+    display: flex; /* Affiche la section "Apprendre" par défaut */
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.4px solid;
+    padding: 20px;
+    border-color: #7283A3;
+    width: 50%;
+}
+#evaluation-content {
+    display: flex; /* Affiche la section "Apprendre" par défaut */
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.4px solid;
+    padding: 20px;
+    border-color: #7283A3;
+    width: 50%;
+}
 
+.exo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.exo .texte{
+    /* width: 20%; */
+    margin-left: 20px;
+}
 
 
 
