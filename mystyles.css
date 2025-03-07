@@ -489,23 +489,21 @@ footer .right .links a{
     display: flex; /* Affiche la section "Apprendre" par défaut */
     flex-direction: column;
     gap: 20px;
-    background-color: white;
     border-radius: 10px;
-    border: 0.4px solid;
     padding: 20px;
-    border-color: #7283A3;
+    /* border-color: #7283A3; */
     width: 50%;
+    background: #F8F8FC;
 }
 #evaluation-content {
     display: flex; /* Affiche la section "Apprendre" par défaut */
     flex-direction: column;
     gap: 20px;
-    background-color: white;
     border-radius: 10px;
-    border: 0.4px solid;
     padding: 20px;
-    border-color: #7283A3;
+    /* border-color: #7283A3; */
     width: 50%;
+    background: #F8F8FC;
 }
 
 .exo{
