@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politique de Confidentialité - Nafar AI</title>
-    <link rel="stylesheet" href="mystyles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", serif;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #DFDEE8;
+            background: #FFF;
+            height: 80px;
+            padding: 25px 50px;
+        }
+        
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        header nav a {
+            color: #384D64;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        
+        header nav .download {
+            border-radius: 20px;
+            border: 1px solid #704ED9;
+            padding: 10px 23px;
+            color: #704ED9;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        
         .privacy-container {
             max-width: 800px;
             margin: 40px auto;
@@ -74,15 +117,60 @@
             margin-top: 30px;
             border-left: 4px solid #F4B400;
         }
+        
+        footer {
+            margin-top: 59px;
+            padding: 45px 105px;
+            background: #192C4D;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        footer .left img {
+            margin-bottom: 24px;
+        }
+        
+        footer .left p {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 27px;
+        }
+        
+        footer .right {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            gap: 24px;
+        }
+        
+        footer .right .links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        footer .right .links a {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        footer .right .socials {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/logo.svg" alt="Nafar AI"></a>
+        <a href="/"><img src="/images/logo.svg" alt="Nafar AI"></a>
         <nav>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUjVn0AxWX8GLJzJg8cKbF_RGWSxApEp6HXwlwRXdjwvdQ5A/viewform?usp=preview">Contactez-nous</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScpZbSBaAPxKGqFwlagPjv-gCF7U4n70ikcq1QzfsSETggGyg/viewform?usp=header" class="download">Télécharger l'application</a>
-            <div class="light"><img src="images/light.svg" alt=""></div>
+            <div class="light"><img src="/images/light.svg" alt=""></div>
         </nav>
     </header>
 
@@ -175,45 +263,28 @@
             <p>Actuellement en phase de test (MVP), certaines fonctionnalités (ex : partage avec les écoles) ne sont pas encore activées. Cette politique sera actualisée dès le lancement officiel.</p>
         </div>
         
-        <a href="index.html" class="back-link">Retour à l'accueil</a>
+        <a href="/" class="back-link">Retour à l'accueil</a>
     </div>
 
-    <footer class="reveal">
+    <footer>
         <div class="left">
             <div class="logo">
-                <img src="images/logo.svg" alt="">
+                <img src="/images/logo.svg" alt="">
             </div>
             <p>Ensemble pour un futur où tout le monde peut apprendre</p>
         </div>
         <div class="right">
             <div class="links">
                 <a href="">CGU</a>
-                <a href="privacy-policy.html">Politique de confidentialité</a>
+                <a href="/privacy-policy.html">Politique de confidentialité</a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUjVn0AxWX8GLJzJg8cKbF_RGWSxApEp6HXwlwRXdjwvdQ5A/viewform?usp=preview">Contact</a>
             </div>
             <div class="socials">
-                <a href=""><img src="images/insta.svg" alt=""></a>
-                <a href=""><img src="images/fb.svg" alt=""></a>
-                <a href=""><img src="images/link.svg" alt=""></a>
+                <a href=""><img src="/images/insta.svg" alt=""></a>
+                <a href=""><img src="/images/fb.svg" alt=""></a>
+                <a href=""><img src="/images/link.svg" alt=""></a>
             </div>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const delay = entry.target.getAttribute('data-delay') || 0;
-                        setTimeout(() => {
-                            entry.target.classList.add('active');
-                        }, delay * 1000);
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-        });
-    </script>
 </body>
-</html>
+</html> 
