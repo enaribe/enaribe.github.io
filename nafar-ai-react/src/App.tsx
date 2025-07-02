@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
-import ApprSection from './components/ApprSection';
 import OptionsSection from './components/OptionsSection';
+import ApprSection from './components/ApprSection';
 import VisionSection from './components/VisionSection';
 import DownloadSection from './components/DownloadSection';
 import Newsletter from './components/Newsletter';
@@ -11,37 +11,45 @@ import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
-    // Intersection Observer pour les animations au scroll
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const delay = entry.target.getAttribute('data-delay') || 0;
-          setTimeout(() => {
-            entry.target.classList.add('active');
-          }, Number(delay) * 1000);
-        } else {
-          entry.target.classList.remove('active');
+          entry.target.classList.add('active');
         }
       });
-    }, { threshold: 0.1 });
+    }, observerOptions);
 
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    // Observe all elements with 'reveal' class
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach((element) => {
+      observer.observe(element);
+    });
 
     // Cleanup
     return () => {
-      document.querySelectorAll('.reveal').forEach((el) => observer.unobserve(el));
+      revealElements.forEach((element) => {
+        observer.unobserve(element);
+      });
     };
   }, []);
 
   return (
-    <div className="App">
+    <div className="min-h-screen bg-white font-nunito">
       <Header />
-      <Banner />
-      <ApprSection />
-      <OptionsSection />
-      <VisionSection />
-      <DownloadSection />
-      <Newsletter />
+      <main>
+        <Banner />
+        <OptionsSection />
+        <ApprSection />
+        <VisionSection />
+        <DownloadSection />
+        <Newsletter />
+      </main>
       <Footer />
     </div>
   );
